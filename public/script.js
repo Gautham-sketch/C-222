@@ -116,7 +116,7 @@ $(function () {
         $.ajax({
             url : "/send-mail",
             type : "POST",
-            data : json.stringify(data),
+            data : JSON.stringify(data),
             dataType : 'json',
             contentType : 'application/json',
             success : function(result) {
